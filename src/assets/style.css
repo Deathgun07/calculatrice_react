@@ -1,0 +1,31 @@
+.app{
+    grid-template-areas: 
+    "res res res res"
+    "7 8 9 rest"
+    "4 5 6 rest"
+    "1 2 3 rest"
+    "0 dot plus minus "
+    "equal equal multi div";
+}
+
+#equal{
+    grid-area: equal;
+}
+h3{
+    height: 30px;
+    grid-area: res;
+}
+
+#clear{
+    grid-area: rest;
+}
+
+button:focus{
+    outline: none;
+}
+
+.liste {
+    opacity: 0;
+    transition: all 1s ease;
+    transform: translateX(-50px);
+}
